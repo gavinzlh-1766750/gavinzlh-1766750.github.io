@@ -5,11 +5,30 @@
 	</head>
 	<body>
 		<h1>Youtube Video</h1>
-		<iframe width="50%" height="500px" src="https://www.youtube.com/embed/Zf-JgTCSEVs?start=180" ></iframe>
+		<iframe width="50%" height="500px" src="https://www.youtube.com/embed/Zf-JgTCSEVs?start=180&autoplay=1&controls=0" ></iframe>
 		<h1>Video</h1>
+		<video width="500" height="400" autoplay>
+			<source src="Catdoesn'tcare.mp4" type="video/mp4">
+		</video>
 		<h1>Audio</h1>
+		<audio controls>
+			<source src="saltarello2.mp3" type="audio/mpeg">
+		</audio>
 		<h1>Ojbect</h1>
 		<object width="10%" height="500px" data="index.html"></object>
 		<h1>RSS Feed</h1>
+		<?xml version="1.0" encoding="UTF-8" ?>
+		<rss version="2.0">
+		<channel>
+			<title>BBC RSS Feed</title>
+			<link>https://www.reddit.com</link>
+			<description>Reddit</description>
+			<item>
+				<title>Showerthoughts</title>
+				<link>https://www.reddit.com/r/Showerthoughts/.rss</link>
+				<description>Reddit subreddit</description>
+			</item>
+		</channel>
+		</rss>
 	</body>
 </html>
