@@ -1,0 +1,44 @@
+p.font1 {
+	font-style: italic;
+	color: blue;
+}
+
+p.font2 {
+	font-size: 13px;
+	color: black;
+}
+
+p.dot {
+	border-style: dotted;
+}
+
+p.round{
+	color: white; 
+	background: blue;
+	border-radius: 25px;
+	padding: 20px; 
+	width: 200px;
+	height: 150px;
+}
+
+img {
+	height: 50px;
+	width: 50px;
+	margin: 20px;
+}
+
+/* Container holding the image and the text */
+.container {
+	position: relative;
+	text-align: center;
+	color: white;
+}
+
+/* Centered text */
+.centered {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
