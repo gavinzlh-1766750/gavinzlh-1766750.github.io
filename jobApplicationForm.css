@@ -14,12 +14,6 @@ tr{
 	color: green;
 }
 
-td{
-	background: black;
-	box-shadow: 5px 10px white;
-
-}
-
 textarea{
 	background: aqua;
 }
@@ -35,12 +29,20 @@ div{
 
 label{
 	font-style: italic;
-}
-
-table{
-	letter-spacing: 10px;
+	color: blue;
 }
 
 legend{
 	text-decoration: line-through;
 }
+
+
+td{
+	background: black;
+	box-shadow: 5px 10px red;
+}
+
+input{
+	color:green;
+}
+
