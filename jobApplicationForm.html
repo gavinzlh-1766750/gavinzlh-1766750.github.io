@@ -1,36 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" href="JobApplicationForm.css">
+<!-- 	<link rel="stylesheet" href="JobApplicationForm.css"> -->
 	<title>Job Application</title>
 	
 </head>
 <body>
 
-<h2 style = "color: green">Job Application</h2>
+<h2 style = "color: green ;border-style: dotted;
+	color: aqua; 
+	background: blue;
+	border-radius: 25px;
+	padding: 20px; 
+	width: 200px;
+	height: 150px;
+	word-spacing: 30px;">
+	Job Application</h2>
 
 <form action="http://gclass.alexburner.com/formtest.php" method="post">
 
 	<fieldset>
-		<legend>Account</legend>
+		<legend style="font-size: 50px;
+			color: green";>Account</legend>
 		<div class="field">
-			<label>Email:</label> 
+			<label style="text-decoration: overline;">Email:</label> 
 			<input type="text" name="email">
 		</div>
 		<div class="field">
-			<label>Password:</label> 
+			<label style="text-decoration: line-through">Password:</label> 
 			<input type="password" name="password">
 		</div>
 		<div class="field">
-			<label>Repeat password:</label> 
+			<label  style="text-decoration: underline">Repeat password:</label> 
 			<input type="password" name="password_r">
 		</div>
 	</fieldset>
 
 	<fieldset>
-		<legend>Personal Information</legend>
+		<legend  style="word-spacing: 20px">Personal Information</legend>
 		<div class="field">
-			<label>Full Name:</label> 
+			<label style="text-decoration: line-through;">Full Name:</label> 
 			<input type="text" name="name">
 		</div>
 		<div class="field">
@@ -42,7 +51,7 @@
 			<input type="text" name="city">
 		</div>
 		<div class="field">
-			<label>State:</label> 
+			<label style="text-decoration: line-through;">State:</label> 
 			<select name="state">
 				<option value="" selected="true">Choose a State</option>
 				<option value="AL">Alabama</option>
@@ -105,15 +114,15 @@
 	</fieldset>
 
 	<fieldset>
-		<legend>Availability</legend>
+		<legend style = "word-spacing: 20px;">Availability</legend>
 		<div class="field">
-			<label>Are you legally able to be employed in this country?</label> 
+			<label style = "font-style: italic;">Are you legally able to be employed in this country?</label> 
 			<input type="radio" name="legal" value="yes">Yes
 			<input type="radio" name="legal" value="no">No
 		</div>
 		<div class="field">
-			<label>What type of position are you seeking? (check all that apply)</label>
-			<ul>
+			<label style= "color: blue;font-size:90px">What type of position are you seeking? (check all that apply)</label>
+			<ul style = "text-decoration: line-through;">
 				<li><input type="checkbox" name="position_pt" value="parttime">Part time</li>
 				<li><input type="checkbox" name="position_ft" value="fulltime">Full time</li>
 				<li><input type="checkbox" name="position_sl" value="seasonal">Seasonal</li>
@@ -121,10 +130,11 @@
 			</ul>
 		</div>
 		<div class="field">
-			<label>Hours available</label>
+			<label style = "letter-spacing: 10px;">Hours available</label>
 			<table>
-				<tr>
-					<td></td>
+				<tr style = "text-decoration: underline;">
+					<td style = "background: black;
+						box-shadow: 5px 10px white;"></td>
 					<th>Sun</th>
 					<th>Mon</th>
 					<th>Tue</th>
@@ -134,24 +144,31 @@
 					<th>Sat</th>
 				</tr>
 				<tr>
-					<th>From</th>
-					<td><input type="time" size="5" name="su_from"></td>
-					<td><input type="time" size="5" name="mo_from"></td>
-					<td><input type="time" size="5" name="tu_from"></td>
-					<td><input type="time" size="5" name="we_from"></td>
-					<td><input type="time" size="5" name="th_from"></td>
-					<td><input type="time" size="5" name="fr_from"></td>
-					<td><input type="time" size="5" name="sa_from"></td>
+					<th style = "text-decoration: overline;">From</th>
+					<td style = "background: black;
+											box-shadow: 5px 10px black;"><input type="time" size="5" name="su_from"></td>
+					<td style = "background: black;
+											box-shadow: 5px 10px white;"><input type="time" size="5" name="mo_from"></td>
+					<td style = "background: black;
+											box-shadow: 5px 10px green;"><input type="time" size="5" name="tu_from"></td>
+					<td style = "background: black;
+											box-shadow: 5px 10px grey"><input type="time" size="5" name="we_from"></td>
+					<td style = "background: black;
+											box-shadow: 5px 10px blue;"><input type="time" size="5" name="th_from"></td>
+					<td style = "background: black;
+											box-shadow: 5px 10px purple;"><input type="time" size="5" name="fr_from"></td>
+					<td style = "background: black;
+											box-shadow: 5px 10px red;"><input type="time" size="5" name="sa_from"></td>
 				</tr>
 				<tr>
-					<th>Until</th>
-					<td><input type="time" size="5" name="su_until"></td>
-					<td><input type="time" size="5" name="mo_until"></td>
-					<td><input type="time" size="5" name="tu_until"></td>
-					<td><input type="time" size="5" name="we_until"></td>
-					<td><input type="time" size="5" name="th_until"></td>
-					<td><input type="time" size="5" name="fr_until"></td>
-					<td><input type="time" size="5" name="sa_until"></td>
+					<th style = "text-decoration: overline;" >Until</th>
+					<td><input type="time" size="5" style = "color: green;" name="su_until"></td>
+					<td><input type="time" size="5" style = "color: white;" name="mo_until"></td>
+					<td><input type="time" size="5" style = "color: green;" name="tu_until"></td>
+					<td><input type="time" size="5" style = "color: grey;" name="we_until"></td>
+					<td><input type="time" size="5" style = "color: blue;" name="th_until"></td>
+					<td><input type="time" size="5" style = "color: purple;" name="fr_until"></td>
+					<td><input type="time" size="5" style = "color: red;" name="sa_until"></td>
 				</tr>
 			</table>
 		</div>
@@ -161,11 +178,11 @@
 		<legend>Personal Statement</legend>
 		<div class="field">
 			<label>Why do you deserve this job?</label><br>
-			<textarea name="deserve" rows="6" cols="60"></textarea>
+			<textarea name="deserve" rows="6" cols="60"  style="background-color: blue;"></textarea>
 		</div>
 		<div class="field">
 			<label>Describe a recent project:</label><br>
-			<textarea name="project" rows="6" cols="60"></textarea>
+			<textarea name="project" rows="6" cols="60"  style="background-color: green;"></textarea>
 		</div>
 	</fieldset>
 
